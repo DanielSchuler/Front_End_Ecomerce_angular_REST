@@ -1,0 +1,67 @@
+<header class="border-bottom mb-4 pb-3">
+    <div class="form-inline">
+        <span class="mr-md-auto">32 Items found </span>
+        <select class="mr-2 form-control">
+            <option>Latest items</option>
+            <option>Trending</option>
+            <option>Most Popular</option>
+            <option>Cheapest</option>
+        </select>
+        <div class="btn-group">
+            <a href="#" class="btn btn-outline-secondary active" data-toggle="tooltip" title="List view"> 
+                <i class="fa fa-bars"></i></a>
+            <a href="#" class="btn  btn-outline-secondary" data-toggle="tooltip" title="Grid view"> 
+                <i class="fa fa-th"></i></a>
+        </div>
+    </div>
+</header><!-- sect-heading -->
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 " *ngFor="let product of products">
+
+
+
+        <article class="card card-product-list mb-3">
+            <div class="row no-gutters">
+                <aside class="col-md-3">
+
+                    <div class="card" >
+                        <a href="#" class="img-wrap">
+                            <!-- Use product.thumbnail and product.name 
+                            <span class="badge badge-danger"> NEW </span>
+                            <img [src]="product.thumbnail" alt="{{ product.name }}">-->
+                        </a>
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                        <a href="#" class="h5 title">{{ product.name }}</a>
+                          <!-- <h5 class="card-title">Card title</h5>-->
+                          <p>{{ product.description }}</p>
+                          <span class="price h5">{{ product.price }}</span>  
+                          <del class="price-old">{{ product.compare_price }}</del>
+                          <p class="text-success">Free shipping</p>
+
+                           <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                           <a href="#" class="btn btn-primary">Details</a>
+                           <a href="#" class="btn btn-light"><i class="fa fa-heart"></i> <span class="text">Add to wishlist</span></a>
+                          <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                      </div>
+
+
+
+                 
+                </aside> <!-- col.// -->
+
+            </div> <!-- row.// -->
+        </article>
+      </div>
+    </div>
+  </div>
+
+

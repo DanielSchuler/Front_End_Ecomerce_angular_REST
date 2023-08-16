@@ -1,0 +1,14 @@
+@import "styles/colors.scss";
+
+
+.mat-snackbar {
+    &.mat-snackbar_error {
+      background: $error;
+      color: $on-error;
+    }
+  
+    &.mat-snackbar_success {
+      background: $success;
+      color: $on-success;
+    }
+  }

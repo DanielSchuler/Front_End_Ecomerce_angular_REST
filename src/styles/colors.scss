@@ -1,0 +1,37 @@
+//Metodologia BEM
+// BLOCK -ELEMNT-MODIFIER
+// BLOCK Obejto dentro de la pagina web: Header,o el contenido de la pagina
+// ELEMNT componente dentro del block que ejecuta una particularidad funcion: por ejemeoplo
+// elemento dentro del menu desplegable o un boton para guardar un conjunto de datos
+// MODIFIERS son las variaciones que ocurren dentro de un block ejmplo: transicion que ocurre cuando se
+// pasa el cursor sobre un boton. cambia de fondo y el damaño
+// BEM separa los estilos de la logica del programa
+
+// un estilo referencia a una sola hoja o es global.
+// si esta en un componente los estilos solo viven en el componente
+// se recomienda arrancar con el global como los fonts la tipografia los colores basicos y las interfaces
+
+// referencia a los colores material.io/resources/color
+//estilos
+$base:#fafafa;
+$base-dark:#e0e0e0;
+$base-light:#ffffff;
+$on-base:#000000;
+
+//colores
+$primary: #0277bd;
+$primary-dark: #004c8c;
+$primary-light: #58a5f0;
+$on-primary: #ffffff;
+
+$secondary: #f44336;
+$secondary-dark: #b90007;
+$secondary-light: #ff795d;
+$on-secondary: #ffffff;
+
+//para error 
+$error: #B00020;
+$on-error: #ffffff;
+//success
+$success: #004c8c;
+$on-success: #ffffff;

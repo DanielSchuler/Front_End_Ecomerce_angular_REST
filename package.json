@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run start:dev",
+    "build": "npm run build:dev",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:dev": "ng serve --c=dev",
+    "build:dev": "ng build --c=dev",
+    "start:prod": "ng serve --c=prod",
+    "build:prod": "ng build --c=prod"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +31,9 @@
     "@ngrx/entity": "^16.1.0",
     "@ngrx/store": "^16.1.0",
     "@ngrx/store-devtools": "^16.1.0",
+    "bootstrap": "^5.3.1",
     "firebase": "^9.23.0",
+    "jquery": "^3.7.0",
     "ngx-image-cropper": "^7.0.1",
     "rxfire": "^6.0.3",
     "rxjs": "~7.8.0",

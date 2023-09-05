@@ -4,8 +4,11 @@ import { CommonModule } from '@angular/common';
 import { StaticRoutingModule } from './static-routing.module';
 
 
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    
+  ],
   imports: [
     CommonModule,
     StaticRoutingModule

@@ -1,0 +1,33 @@
+
+@import "../../../styles/vendor/bootstrap-min.scss";
+@import "../../../styles/vendor/principal.scss";
+@import "../../../styles/vendor/responsive-styles.scss";
+
+.navegacion {
+    background: white;
+	flex-direction: inherit ;	
+}
+  /* CSS for desktop screens */
+@media (min-width: 992px) {
+    
+    .navbar .collapse {
+        display: block !important;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+/* Reset for smaller screens */
+@media (max-width: 991px) {
+    
+    .navbar-expand-lg .navbar-nav .nav-item {
+        display: block;
+            background: white;
+        margin-right: 0;
+    }
+}

@@ -1,6 +1,7 @@
 export interface ProductDetailI {
+  product:{
     id: number;
-    thumbnail: string;
+    //thumbnail: string;
     name: string;
     photo: string;
     description: string;
@@ -11,5 +12,7 @@ export interface ProductDetailI {
     date_created: string;
     date_updated: string;
     category: number;
+  }
+    
   }
   

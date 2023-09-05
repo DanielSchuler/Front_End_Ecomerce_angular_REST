@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
 // paquete principal de integracion con Firebase
 import {AngularFireModule} from '@angular/fire/compat';
 // enlazarme con los servicios de storage o almacenamiento de archivos de firebase
@@ -43,9 +43,17 @@ import { PlantillasModule } from './shared/plantillas';
 
 
 
+import { ProductDetailModule } from './components/product-detail/product-detail.module';
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
+    
+    
    
    
 
@@ -74,7 +82,9 @@ import { PlantillasModule } from './shared/plantillas';
     
     ReactiveFormsModule, 
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
+    ProductDetailModule 
     
   ],
   providers: [],

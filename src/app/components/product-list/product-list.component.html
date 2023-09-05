@@ -23,7 +23,7 @@
 
 <div class="container">
     <div class="row">
-      <div class="col-md-4 " *ngFor="let product of products">
+      <div class="col-md-4 " *ngFor="let product of products" (click)="productDetail(product.id)">
 
 
 
@@ -37,7 +37,7 @@
                             <span class="badge badge-danger"> NEW </span>
                             <img [src]="product.thumbnail" alt="{{ product.name }}">-->
                         </a>
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <!--<img class="card-img-top" src="..." alt="Card image cap">-->
                         <div class="card-body">
                         <a href="#" class="h5 title">{{ product.name }}</a>
                           <!-- <h5 class="card-title">Card title</h5>-->
@@ -47,6 +47,10 @@
                           <p class="text-success">Free shipping</p>
 
                            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                           
+
+                        
+                            
                            <a href="#" class="btn btn-primary">Details</a>
                            <a href="#" class="btn btn-light"><i class="fa fa-heart"></i> <span class="text">Add to wishlist</span></a>
                           <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->

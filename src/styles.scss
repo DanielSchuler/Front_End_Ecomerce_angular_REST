@@ -1,6 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 //importacion del prebuild de angular 
-@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
-
 @import "styles/main.scss";
+
+
+//@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+//angular json   "@angular/material/prebuilt-themes/deeppurple-amber.css",
+
+/* Set the size of the entire page */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    //overflow: hidden; /* Optional: Prevent scrollbars if content overflows */
+  }
+
+
+
 

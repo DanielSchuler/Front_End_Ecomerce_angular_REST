@@ -342,15 +342,11 @@ ul.sub-menu {
 *******Footer CSS******
 **************************/
 
-#footer {
-  //background: #F0F0E9;
-  //background: #f0f0e9;
-}
 
 .footer-top .container {
   border-bottom: 1px solid #E0E0DA;
   padding-bottom: 20px;
-  background: green;
+  //background: green;
 }
 
 .companyinfo {
@@ -469,7 +465,7 @@ ul.sub-menu {
   margin-bottom: 68px;
 
   .container {
-    //border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
     padding-top: 15px;
   }
 }

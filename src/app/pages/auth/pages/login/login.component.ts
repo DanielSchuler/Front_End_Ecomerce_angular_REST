@@ -75,8 +75,9 @@ export class LoginComponent implements OnInit {
       if(dataResponse.status === '200'){
  
           const token = dataResponse.result.token.access;
-          localStorage.setItem("token", token);
-          this.router.navigate(['dashboard']);
+          console.log(token);
+          //localStorage.setItem("token", token);
+          //this.router.navigate(['dashboard']);
           //console.log("entre al if ", dataResponse);
 
       }
